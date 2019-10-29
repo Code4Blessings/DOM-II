@@ -4,6 +4,12 @@
 const navigation = document.querySelectorAll('.nav-link');
 const image = document.querySelectorAll('img');
 const body = document.querySelector('body');
+const button = document.querySelectorAll('.btn');
+
+//Load Listener
+window.addEventListener("load", () => {
+    alert("Your page has loaded. Double click on the images for a larger view. Refresh the page to go back to normal. Happy Browsing!!!");
+});
 
 //Scroll Bar
 window.addEventListener('scroll', () => {
@@ -45,6 +51,13 @@ for (let i = 0; i < image.length; i++) {
     image[i].addEventListener('dblclick', (event) => {
         event.target.style.transform = 'scale(2)';
     });
+}
+
+//Click Signup
+for(let i=0; i < button.length; i++) {
+    button[i].addEventListener('click', () => {
+        alert("Thank you for choosing this vacation spot. Someone will be contacting you shortly");
+    })
 }
 
 
