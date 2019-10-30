@@ -5,6 +5,7 @@ const navigation = document.querySelectorAll('.nav-link');
 const image = document.querySelectorAll('img');
 const body = document.querySelector('body');
 const button = document.querySelectorAll('.btn');
+const destinationH4 = document.querySelectorAll('.destination h4')
 
 //Load Listener
 window.addEventListener("load", () => {
@@ -60,7 +61,12 @@ for(let i=0; i < button.length; i++) {
     })
 }
 
-//Select Listener
+//Copy Listener
+for(let i=0; i < destinationH4.length; i++) {
+    destinationH4[i].addEventListener('copy', () => {
+        alert("Your selection has been copied to clipboard");
+    });
+}
 
 
 
