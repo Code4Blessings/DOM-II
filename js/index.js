@@ -29,6 +29,13 @@ window.addEventListener('keydown', (key) => {
     }
 })
 
+//Keyup
+window.addEventListener('keyup', (key) => {
+    if (key.keyCode === 8) {
+        alert("Are you leaving the site?")
+    }
+})
+
 //Resize
 window.addEventListener('resize', () => {
     body.style.backgroundColor = "#F7B84A";
