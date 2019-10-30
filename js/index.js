@@ -22,6 +22,13 @@ window.addEventListener('scroll', () => {
     }
 });
 
+//Keydown
+window.addEventListener('keydown', (key) => {
+    if(key.keyCode === 13) {
+        alert("Welcome to the Fun Bus!")
+    }
+})
+
 //Resize
 window.addEventListener('resize', () => {
     body.style.backgroundColor = "#F7B84A";
@@ -58,7 +65,7 @@ for (let i = 0; i < image.length; i++) {
 for(let i=0; i < button.length; i++) {
     button[i].addEventListener('click', () => {
         alert("Thank you for choosing this vacation spot. Someone will be contacting you shortly");
-    })
+    });
 }
 
 //Copy Listener
