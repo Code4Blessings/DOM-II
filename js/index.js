@@ -8,7 +8,7 @@ const button = document.querySelectorAll('.btn');
 
 //Load Listener
 window.addEventListener("load", () => {
-    alert("Your page has loaded. Double click on the images for a larger view. Refresh the page to go back to normal. Happy Browsing!!!");
+    TweenMax.to(".intro img", 6, {x:573, rotation:360, scale:0.5});
 });
 
 //Scroll Bar
@@ -59,6 +59,9 @@ for(let i=0; i < button.length; i++) {
         alert("Thank you for choosing this vacation spot. Someone will be contacting you shortly");
     })
 }
+
+//Select Listener
+
 
 
 
